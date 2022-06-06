@@ -3,7 +3,6 @@ const aPI = new Vue({
 
     data: {
         email : [''],
-        mail : 'pepp'
     },
 
     mounted(){
@@ -14,11 +13,4 @@ const aPI = new Vue({
         })
     },
 
-    methods : {
-        addNumber: function(){
-            if(this.mail){
-            this.email.push(this.mail);
-            }
-            },
-    }
 }) 
