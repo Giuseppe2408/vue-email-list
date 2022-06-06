@@ -2,9 +2,9 @@ const aPI = new Vue({
     el: '#app',
 
     data: {
-        email : [''],
+        email : [],
     },
-
+    
     mounted(){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((result) => {
             const resultMail = result.data.response;
@@ -12,5 +12,7 @@ const aPI = new Vue({
             this.email = resultMail;
         })
     },
+
+
 
 }) 
